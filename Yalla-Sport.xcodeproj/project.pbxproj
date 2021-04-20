@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		167652621B16EAE295FA28DB /* Pods_Yalla_SportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0C2A340A2AD4101DA11BC1 /* Pods_Yalla_SportTests.framework */; };
+		757A45D4E0979E816698FA01 /* Pods_Yalla_Sport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA91CED1C12383087ACE7B85 /* Pods_Yalla_Sport.framework */; };
+		D29C9B40262EF07800817967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C9B3F262EF07800817967 /* AppDelegate.swift */; };
+		D29C9B42262EF07800817967 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C9B41262EF07800817967 /* SceneDelegate.swift */; };
+		D29C9B44262EF07900817967 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C9B43262EF07900817967 /* ViewController.swift */; };
+		D29C9B47262EF07900817967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29C9B45262EF07900817967 /* Main.storyboard */; };
+		D29C9B4A262EF07900817967 /* Yalla_Sport.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D29C9B48262EF07900817967 /* Yalla_Sport.xcdatamodeld */; };
+		D29C9B4C262EF07D00817967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D29C9B4B262EF07D00817967 /* Assets.xcassets */; };
+		D29C9B4F262EF07D00817967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29C9B4D262EF07D00817967 /* LaunchScreen.storyboard */; };
+		D29C9B5A262EF07D00817967 /* Yalla_SportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C9B59262EF07D00817967 /* Yalla_SportTests.swift */; };
+		D29C9B65262EF07D00817967 /* Yalla_SportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C9B64262EF07D00817967 /* Yalla_SportUITests.swift */; };
+		F9947D18F577F6A82B701A92 /* Pods_Yalla_Sport_Yalla_SportUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750151EEC93F73AECE364095 /* Pods_Yalla_Sport_Yalla_SportUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D29C9B56262EF07D00817967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D29C9B34262EF07800817967 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D29C9B3B262EF07800817967;
+			remoteInfo = "Yalla-Sport";
+		};
+		D29C9B61262EF07D00817967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D29C9B34262EF07800817967 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D29C9B3B262EF07800817967;
+			remoteInfo = "Yalla-Sport";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B551BC017872CF4D53D3C63 /* Pods-Yalla-Sport-Yalla-SportUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla-Sport-Yalla-SportUITests.debug.xcconfig"; path = "Target Support Files/Pods-Yalla-Sport-Yalla-SportUITests/Pods-Yalla-Sport-Yalla-SportUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		143991AE98C143531C4E3442 /* Pods-Yalla-Sport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla-Sport.debug.xcconfig"; path = "Target Support Files/Pods-Yalla-Sport/Pods-Yalla-Sport.debug.xcconfig"; sourceTree = "<group>"; };
+		1C6CFA1BC81AFCF9CE0C200E /* Pods-Yalla-Sport-Yalla-SportUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla-Sport-Yalla-SportUITests.release.xcconfig"; path = "Target Support Files/Pods-Yalla-Sport-Yalla-SportUITests/Pods-Yalla-Sport-Yalla-SportUITests.release.xcconfig"; sourceTree = "<group>"; };
+		718F2F3711A9A4094FEF6D83 /* Pods-Yalla-SportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla-SportTests.release.xcconfig"; path = "Target Support Files/Pods-Yalla-SportTests/Pods-Yalla-SportTests.release.xcconfig"; sourceTree = "<group>"; };
+		750151EEC93F73AECE364095 /* Pods_Yalla_Sport_Yalla_SportUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yalla_Sport_Yalla_SportUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD67A8202AAFE9D45D0B6DFE /* Pods-Yalla-Sport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla-Sport.release.xcconfig"; path = "Target Support Files/Pods-Yalla-Sport/Pods-Yalla-Sport.release.xcconfig"; sourceTree = "<group>"; };
+		ADF81AB0E5C72D035BA81AC9 /* Pods-Yalla-SportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla-SportTests.debug.xcconfig"; path = "Target Support Files/Pods-Yalla-SportTests/Pods-Yalla-SportTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D29C9B3C262EF07800817967 /* Yalla-Sport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yalla-Sport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29C9B3F262EF07800817967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D29C9B41262EF07800817967 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D29C9B43262EF07900817967 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D29C9B46262EF07900817967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D29C9B49262EF07900817967 /* Yalla_Sport.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yalla_Sport.xcdatamodel; sourceTree = "<group>"; };
+		D29C9B4B262EF07D00817967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D29C9B4E262EF07D00817967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D29C9B50262EF07D00817967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D29C9B55262EF07D00817967 /* Yalla-SportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yalla-SportTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29C9B59262EF07D00817967 /* Yalla_SportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yalla_SportTests.swift; sourceTree = "<group>"; };
+		D29C9B5B262EF07D00817967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D29C9B60262EF07D00817967 /* Yalla-SportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yalla-SportUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29C9B64262EF07D00817967 /* Yalla_SportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yalla_SportUITests.swift; sourceTree = "<group>"; };
+		D29C9B66262EF07D00817967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB0C2A340A2AD4101DA11BC1 /* Pods_Yalla_SportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yalla_SportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA91CED1C12383087ACE7B85 /* Pods_Yalla_Sport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yalla_Sport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D29C9B39262EF07800817967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757A45D4E0979E816698FA01 /* Pods_Yalla_Sport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29C9B52262EF07D00817967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167652621B16EAE295FA28DB /* Pods_Yalla_SportTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29C9B5D262EF07D00817967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9947D18F577F6A82B701A92 /* Pods_Yalla_Sport_Yalla_SportUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D29C9B33262EF07800817967 = {
+			isa = PBXGroup;
+			children = (
+				D29C9B3E262EF07800817967 /* Yalla-Sport */,
+				D29C9B58262EF07D00817967 /* Yalla-SportTests */,
+				D29C9B63262EF07D00817967 /* Yalla-SportUITests */,
+				D29C9B3D262EF07800817967 /* Products */,
+				F26CD889AA28B99138A53327 /* Pods */,
+				D785A882C0125F3C5CEF0362 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D29C9B3D262EF07800817967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D29C9B3C262EF07800817967 /* Yalla-Sport.app */,
+				D29C9B55262EF07D00817967 /* Yalla-SportTests.xctest */,
+				D29C9B60262EF07D00817967 /* Yalla-SportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D29C9B3E262EF07800817967 /* Yalla-Sport */ = {
+			isa = PBXGroup;
+			children = (
+				D29C9B74262EF18000817967 /* core-data */,
+				D29C9B73262EF16200817967 /* support */,
+				D29C9B72262EF13A00817967 /* resources */,
+				D29C9B43262EF07900817967 /* ViewController.swift */,
+				D29C9B45262EF07900817967 /* Main.storyboard */,
+				D29C9B50262EF07D00817967 /* Info.plist */,
+			);
+			path = "Yalla-Sport";
+			sourceTree = "<group>";
+		};
+		D29C9B58262EF07D00817967 /* Yalla-SportTests */ = {
+			isa = PBXGroup;
+			children = (
+				D29C9B59262EF07D00817967 /* Yalla_SportTests.swift */,
+				D29C9B5B262EF07D00817967 /* Info.plist */,
+			);
+			path = "Yalla-SportTests";
+			sourceTree = "<group>";
+		};
+		D29C9B63262EF07D00817967 /* Yalla-SportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D29C9B64262EF07D00817967 /* Yalla_SportUITests.swift */,
+				D29C9B66262EF07D00817967 /* Info.plist */,
+			);
+			path = "Yalla-SportUITests";
+			sourceTree = "<group>";
+		};
+		D29C9B72262EF13A00817967 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				D29C9B4D262EF07D00817967 /* LaunchScreen.storyboard */,
+				D29C9B4B262EF07D00817967 /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		D29C9B73262EF16200817967 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				D29C9B3F262EF07800817967 /* AppDelegate.swift */,
+				D29C9B41262EF07800817967 /* SceneDelegate.swift */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		D29C9B74262EF18000817967 /* core-data */ = {
+			isa = PBXGroup;
+			children = (
+				D29C9B48262EF07900817967 /* Yalla_Sport.xcdatamodeld */,
+			);
+			path = "core-data";
+			sourceTree = "<group>";
+		};
+		D785A882C0125F3C5CEF0362 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA91CED1C12383087ACE7B85 /* Pods_Yalla_Sport.framework */,
+				750151EEC93F73AECE364095 /* Pods_Yalla_Sport_Yalla_SportUITests.framework */,
+				DB0C2A340A2AD4101DA11BC1 /* Pods_Yalla_SportTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F26CD889AA28B99138A53327 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				143991AE98C143531C4E3442 /* Pods-Yalla-Sport.debug.xcconfig */,
+				AD67A8202AAFE9D45D0B6DFE /* Pods-Yalla-Sport.release.xcconfig */,
+				0B551BC017872CF4D53D3C63 /* Pods-Yalla-Sport-Yalla-SportUITests.debug.xcconfig */,
+				1C6CFA1BC81AFCF9CE0C200E /* Pods-Yalla-Sport-Yalla-SportUITests.release.xcconfig */,
+				ADF81AB0E5C72D035BA81AC9 /* Pods-Yalla-SportTests.debug.xcconfig */,
+				718F2F3711A9A4094FEF6D83 /* Pods-Yalla-SportTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D29C9B3B262EF07800817967 /* Yalla-Sport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D29C9B69262EF07D00817967 /* Build configuration list for PBXNativeTarget "Yalla-Sport" */;
+			buildPhases = (
+				9F0E004FA96C3501350AF3C5 /* [CP] Check Pods Manifest.lock */,
+				D29C9B38262EF07800817967 /* Sources */,
+				D29C9B39262EF07800817967 /* Frameworks */,
+				D29C9B3A262EF07800817967 /* Resources */,
+				B03E37834DB4023262D976A7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yalla-Sport";
+			productName = "Yalla-Sport";
+			productReference = D29C9B3C262EF07800817967 /* Yalla-Sport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D29C9B54262EF07D00817967 /* Yalla-SportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D29C9B6C262EF07D00817967 /* Build configuration list for PBXNativeTarget "Yalla-SportTests" */;
+			buildPhases = (
+				1445AD90A491C8E2A8EC1D92 /* [CP] Check Pods Manifest.lock */,
+				D29C9B51262EF07D00817967 /* Sources */,
+				D29C9B52262EF07D00817967 /* Frameworks */,
+				D29C9B53262EF07D00817967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D29C9B57262EF07D00817967 /* PBXTargetDependency */,
+			);
+			name = "Yalla-SportTests";
+			productName = "Yalla-SportTests";
+			productReference = D29C9B55262EF07D00817967 /* Yalla-SportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D29C9B5F262EF07D00817967 /* Yalla-SportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D29C9B6F262EF07D00817967 /* Build configuration list for PBXNativeTarget "Yalla-SportUITests" */;
+			buildPhases = (
+				9670ED92640A9324A5BCA570 /* [CP] Check Pods Manifest.lock */,
+				D29C9B5C262EF07D00817967 /* Sources */,
+				D29C9B5D262EF07D00817967 /* Frameworks */,
+				D29C9B5E262EF07D00817967 /* Resources */,
+				5BA662FDEE6FE3DD74763243 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D29C9B62262EF07D00817967 /* PBXTargetDependency */,
+			);
+			name = "Yalla-SportUITests";
+			productName = "Yalla-SportUITests";
+			productReference = D29C9B60262EF07D00817967 /* Yalla-SportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D29C9B34262EF07800817967 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = ITI;
+				TargetAttributes = {
+					D29C9B3B262EF07800817967 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					D29C9B54262EF07D00817967 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = D29C9B3B262EF07800817967;
+					};
+					D29C9B5F262EF07D00817967 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = D29C9B3B262EF07800817967;
+					};
+				};
+			};
+			buildConfigurationList = D29C9B37262EF07800817967 /* Build configuration list for PBXProject "Yalla-Sport" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D29C9B33262EF07800817967;
+			productRefGroup = D29C9B3D262EF07800817967 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D29C9B3B262EF07800817967 /* Yalla-Sport */,
+				D29C9B54262EF07D00817967 /* Yalla-SportTests */,
+				D29C9B5F262EF07D00817967 /* Yalla-SportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D29C9B3A262EF07800817967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29C9B4F262EF07D00817967 /* LaunchScreen.storyboard in Resources */,
+				D29C9B4C262EF07D00817967 /* Assets.xcassets in Resources */,
+				D29C9B47262EF07900817967 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29C9B53262EF07D00817967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29C9B5E262EF07D00817967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1445AD90A491C8E2A8EC1D92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yalla-SportTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BA662FDEE6FE3DD74763243 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yalla-Sport-Yalla-SportUITests/Pods-Yalla-Sport-Yalla-SportUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yalla-Sport-Yalla-SportUITests/Pods-Yalla-Sport-Yalla-SportUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yalla-Sport-Yalla-SportUITests/Pods-Yalla-Sport-Yalla-SportUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9670ED92640A9324A5BCA570 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yalla-Sport-Yalla-SportUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F0E004FA96C3501350AF3C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yalla-Sport-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B03E37834DB4023262D976A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yalla-Sport/Pods-Yalla-Sport-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yalla-Sport/Pods-Yalla-Sport-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yalla-Sport/Pods-Yalla-Sport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D29C9B38262EF07800817967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29C9B44262EF07900817967 /* ViewController.swift in Sources */,
+				D29C9B40262EF07800817967 /* AppDelegate.swift in Sources */,
+				D29C9B4A262EF07900817967 /* Yalla_Sport.xcdatamodeld in Sources */,
+				D29C9B42262EF07800817967 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29C9B51262EF07D00817967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29C9B5A262EF07D00817967 /* Yalla_SportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29C9B5C262EF07D00817967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29C9B65262EF07D00817967 /* Yalla_SportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D29C9B57262EF07D00817967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D29C9B3B262EF07800817967 /* Yalla-Sport */;
+			targetProxy = D29C9B56262EF07D00817967 /* PBXContainerItemProxy */;
+		};
+		D29C9B62262EF07D00817967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D29C9B3B262EF07800817967 /* Yalla-Sport */;
+			targetProxy = D29C9B61262EF07D00817967 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D29C9B45262EF07900817967 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D29C9B46262EF07900817967 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D29C9B4D262EF07D00817967 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D29C9B4E262EF07D00817967 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D29C9B67262EF07D00817967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D29C9B68262EF07D00817967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D29C9B6A262EF07D00817967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 143991AE98C143531C4E3442 /* Pods-Yalla-Sport.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Yalla-Sport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Yalla-Sport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D29C9B6B262EF07D00817967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD67A8202AAFE9D45D0B6DFE /* Pods-Yalla-Sport.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Yalla-Sport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Yalla-Sport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D29C9B6D262EF07D00817967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF81AB0E5C72D035BA81AC9 /* Pods-Yalla-SportTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Yalla-SportTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Yalla-SportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yalla-Sport.app/Yalla-Sport";
+			};
+			name = Debug;
+		};
+		D29C9B6E262EF07D00817967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718F2F3711A9A4094FEF6D83 /* Pods-Yalla-SportTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Yalla-SportTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Yalla-SportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yalla-Sport.app/Yalla-Sport";
+			};
+			name = Release;
+		};
+		D29C9B70262EF07D00817967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B551BC017872CF4D53D3C63 /* Pods-Yalla-Sport-Yalla-SportUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Yalla-SportUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Yalla-SportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yalla-Sport";
+			};
+			name = Debug;
+		};
+		D29C9B71262EF07D00817967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C6CFA1BC81AFCF9CE0C200E /* Pods-Yalla-Sport-Yalla-SportUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = "Yalla-SportUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.Yalla-SportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yalla-Sport";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D29C9B37262EF07800817967 /* Build configuration list for PBXProject "Yalla-Sport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29C9B67262EF07D00817967 /* Debug */,
+				D29C9B68262EF07D00817967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D29C9B69262EF07D00817967 /* Build configuration list for PBXNativeTarget "Yalla-Sport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29C9B6A262EF07D00817967 /* Debug */,
+				D29C9B6B262EF07D00817967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D29C9B6C262EF07D00817967 /* Build configuration list for PBXNativeTarget "Yalla-SportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29C9B6D262EF07D00817967 /* Debug */,
+				D29C9B6E262EF07D00817967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D29C9B6F262EF07D00817967 /* Build configuration list for PBXNativeTarget "Yalla-SportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29C9B70262EF07D00817967 /* Debug */,
+				D29C9B71262EF07D00817967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D29C9B48262EF07900817967 /* Yalla_Sport.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D29C9B49262EF07900817967 /* Yalla_Sport.xcdatamodel */,
+			);
+			currentVersion = D29C9B49262EF07900817967 /* Yalla_Sport.xcdatamodel */;
+			path = Yalla_Sport.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D29C9B34262EF07800817967 /* Project object */;
+}
