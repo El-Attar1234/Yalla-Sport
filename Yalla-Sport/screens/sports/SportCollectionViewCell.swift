@@ -23,4 +23,12 @@ extension UIImageView{
    func doenloadImage(url:String){
         self.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: "movie_image"))
     }
+    func makeRounded() {
+
+           self.layer.borderWidth = 1
+           self.layer.masksToBounds = false
+           self.layer.borderColor = UIColor.black.cgColor
+           self.layer.cornerRadius = self.frame.height / 2
+           self.clipsToBounds = true
+       }
 }
