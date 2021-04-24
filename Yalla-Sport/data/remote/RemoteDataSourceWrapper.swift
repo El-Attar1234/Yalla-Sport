@@ -12,6 +12,7 @@ enum RemoteDataSourceWrapper{
     case getAllLeagues
     case getLeagueData(leagueId : String)
     case getAllEvents(leagueId : String)
+    case getTeamDetailsByName(teamName : String)
 }
 
 extension RemoteDataSourceWrapper :ApiRequestWrapper{
@@ -28,27 +29,31 @@ extension RemoteDataSourceWrapper :ApiRequestWrapper{
         case .getLeagueData:
             return "/lookupleague.php"
         case .getAllEvents :
-           return "/eventspastleague.php"
+            return "/eventspastleague.php"
+        case .getTeamDetailsByName :
+            return "/searchteams.php"
         }
         
     }
     
     var method: HttpMethod {
-       return .get
+        return .get
     }
     
     var task: Task {
         switch self {
         case .getLeagueData(leagueId: let leagueId) , .getAllEvents(leagueId: let leagueId):
             return .requestParameters(parameters: ["id" : leagueId], encoding: URLEncoding.queryString)
+        case .getTeamDetailsByName(teamName: let teamName) :
+            return .requestParameters(parameters: ["t" : teamName], encoding: URLEncoding.queryString)
         default:
-              return .requestPlain
+            return .requestPlain
         }
-    
+        
     }
     
     var headers: [String : String]? {
-         return nil
+        return nil
     }
     
     
