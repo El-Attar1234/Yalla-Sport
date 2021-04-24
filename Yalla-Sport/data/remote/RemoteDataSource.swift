@@ -11,10 +11,21 @@ protocol RemoteDataSourceProtocol {
     func getAllSports(completion: @escaping (Result<SportsResponse<Sport>?, NSError>) -> Void)
     func getAllLeagues(completion: @escaping (Result<LeagueResponse<League>?, NSError>) -> Void)
     func getLeagueData(leagueId:String , completion: @escaping (Result<LeagueResponse<League>?, NSError>) -> Void)
+     func getAllEvents(leagueId:String , completion: @escaping (Result<EventResponse<Event>?, NSError>) -> Void)
 }
 
 
 class RemoteDataSource: NetworkManager<RemoteDataSourceWrapper> , RemoteDataSourceProtocol {
+    func getAllEvents(leagueId: String, completion: @escaping (Result<EventResponse<Event>?, NSError>) -> Void) {
+            self.fetchData(target: .getAllEvents(leagueId: leagueId), responseClass:EventResponse<Event>.self) { (result) in
+                         completion(result)
+                     }
+    }
+    
+   
+    
+   
+    
     func getLeagueData(leagueId: String, completion: @escaping (Result<LeagueResponse<League>?, NSError>) -> Void) {
         self.fetchData(target: .getLeagueData(leagueId: leagueId), responseClass:LeagueResponse<League>.self) { (result) in
                      completion(result)

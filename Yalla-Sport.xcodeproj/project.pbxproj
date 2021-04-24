@@ -15,6 +15,12 @@
 		D29861FD263216D1006A1152 /* SportsVC+UIcollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29861FC263216D1006A1152 /* SportsVC+UIcollectionView.swift */; };
 		D29861FF263237B2006A1152 /* LeaguesViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29861FE263237B2006A1152 /* LeaguesViewController+UITableView.swift */; };
 		D298620126323A8F006A1152 /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298620026323A8F006A1152 /* LeagueTableViewCell.swift */; };
+		D298624526331526006A1152 /* LeaguesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298624426331526006A1152 /* LeaguesDetailsViewController.swift */; };
+		D2986248263315C3006A1152 /* UpcomingEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2986247263315C3006A1152 /* UpcomingEventTableViewCell.swift */; };
+		D298624A26331631006A1152 /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298624926331631006A1152 /* UpcomingCollectionViewCell.swift */; };
+		D298624E2633DC5E006A1152 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298624D2633DC5E006A1152 /* Event.swift */; };
+		D29862512633DF5B006A1152 /* EventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29862502633DF5B006A1152 /* EventResponse.swift */; };
+		D29862532633E7A2006A1152 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29862522633E7A2006A1152 /* Team.swift */; };
 		D29C9B40262EF07800817967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C9B3F262EF07800817967 /* AppDelegate.swift */; };
 		D29C9B42262EF07800817967 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C9B41262EF07800817967 /* SceneDelegate.swift */; };
 		D29C9B44262EF07900817967 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29C9B43262EF07900817967 /* ViewController.swift */; };
@@ -68,6 +74,12 @@
 		D29861FC263216D1006A1152 /* SportsVC+UIcollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SportsVC+UIcollectionView.swift"; sourceTree = "<group>"; };
 		D29861FE263237B2006A1152 /* LeaguesViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeaguesViewController+UITableView.swift"; sourceTree = "<group>"; };
 		D298620026323A8F006A1152 /* LeagueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableViewCell.swift; sourceTree = "<group>"; };
+		D298624426331526006A1152 /* LeaguesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDetailsViewController.swift; sourceTree = "<group>"; };
+		D2986247263315C3006A1152 /* UpcomingEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventTableViewCell.swift; sourceTree = "<group>"; };
+		D298624926331631006A1152 /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
+		D298624D2633DC5E006A1152 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D29862502633DF5B006A1152 /* EventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventResponse.swift; sourceTree = "<group>"; };
+		D29862522633E7A2006A1152 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		D29C9B3C262EF07800817967 /* Yalla-Sport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yalla-Sport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29C9B3F262EF07800817967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D29C9B41262EF07800817967 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +145,34 @@
 				D298620026323A8F006A1152 /* LeagueTableViewCell.swift */,
 			);
 			path = leagues;
+			sourceTree = "<group>";
+		};
+		D2986243263314D7006A1152 /* league_details */ = {
+			isa = PBXGroup;
+			children = (
+				D2986246263315A0006A1152 /* cells */,
+				D298624426331526006A1152 /* LeaguesDetailsViewController.swift */,
+			);
+			path = league_details;
+			sourceTree = "<group>";
+		};
+		D2986246263315A0006A1152 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				D2986247263315C3006A1152 /* UpcomingEventTableViewCell.swift */,
+				D298624926331631006A1152 /* UpcomingCollectionViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		D298624F2633DF2D006A1152 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				D29861F52632126C006A1152 /* LeagueResponse.swift */,
+				D29C9B88262F8D1F00817967 /* SportsResponse.swift */,
+				D29862502633DF5B006A1152 /* EventResponse.swift */,
+			);
+			path = response;
 			sourceTree = "<group>";
 		};
 		D29C9B33262EF07800817967 = {
@@ -247,10 +287,9 @@
 		D29C9B7E262F89C500817967 /* remote */ = {
 			isa = PBXGroup;
 			children = (
+				D298624F2633DF2D006A1152 /* response */,
 				D29C9B82262F8AB800817967 /* RemoteDataSource.swift */,
 				D29C9B84262F8AD800817967 /* RemoteDataSourceWrapper.swift */,
-				D29C9B88262F8D1F00817967 /* SportsResponse.swift */,
-				D29861F52632126C006A1152 /* LeagueResponse.swift */,
 			);
 			path = remote;
 			sourceTree = "<group>";
@@ -260,6 +299,8 @@
 			children = (
 				D29C9B80262F8A1100817967 /* Sport.swift */,
 				D29861F3263211F3006A1152 /* League.swift */,
+				D298624D2633DC5E006A1152 /* Event.swift */,
+				D29862522633E7A2006A1152 /* Team.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -267,6 +308,7 @@
 		D29C9B8A262F8D6600817967 /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				D2986243263314D7006A1152 /* league_details */,
 				D29861F7263215E5006A1152 /* leagues */,
 				D29C9B8D262F9A3800817967 /* sports */,
 			);
@@ -546,7 +588,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2986248263315C3006A1152 /* UpcomingEventTableViewCell.swift in Sources */,
 				D29C9B91262F9DAA00817967 /* SportsVC.swift in Sources */,
+				D29862532633E7A2006A1152 /* Team.swift in Sources */,
 				D29861FF263237B2006A1152 /* LeaguesViewController+UITableView.swift in Sources */,
 				D29861FB2632166F006A1152 /* LeaguesViewController.swift in Sources */,
 				D29861F62632126C006A1152 /* LeagueResponse.swift in Sources */,
@@ -554,17 +598,21 @@
 				D29C9B7D262F898300817967 /* ErrorMessage.swift in Sources */,
 				D298620126323A8F006A1152 /* LeagueTableViewCell.swift in Sources */,
 				D29C9B93262FAC2700817967 /* SliderCollectionViewCell.swift in Sources */,
+				D298624526331526006A1152 /* LeaguesDetailsViewController.swift in Sources */,
 				D29C9B85262F8AD800817967 /* RemoteDataSourceWrapper.swift in Sources */,
 				D29C9B40262EF07800817967 /* AppDelegate.swift in Sources */,
 				D29C9B78262F888F00817967 /* NetworkManager.swift in Sources */,
 				D29C9B8F262F9A7000817967 /* SportCollectionViewCell.swift in Sources */,
 				D29C9B83262F8AB800817967 /* RemoteDataSource.swift in Sources */,
+				D29862512633DF5B006A1152 /* EventResponse.swift in Sources */,
 				D29C9B89262F8D1F00817967 /* SportsResponse.swift in Sources */,
+				D298624E2633DC5E006A1152 /* Event.swift in Sources */,
 				D29861FD263216D1006A1152 /* SportsVC+UIcollectionView.swift in Sources */,
 				D29C9B4A262EF07900817967 /* Yalla_Sport.xcdatamodeld in Sources */,
 				D29C9B7A262F88AA00817967 /* ApiRequestWrapper.swift in Sources */,
 				D29C9B81262F8A1100817967 /* Sport.swift in Sources */,
 				D29861F4263211F3006A1152 /* League.swift in Sources */,
+				D298624A26331631006A1152 /* UpcomingCollectionViewCell.swift in Sources */,
 				D29C9B42262EF07800817967 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

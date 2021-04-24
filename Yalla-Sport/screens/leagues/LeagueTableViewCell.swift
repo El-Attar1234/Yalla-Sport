@@ -26,7 +26,7 @@ class LeagueTableViewCell: UITableViewCell {
     func set(league : League){
         leagueName.text = league.strLeague
         //print(league.strFanart1 ?? "no link")
-        leagueImage.doenloadImage(url: league.strFanart1 ?? "https://www.thesportsdb.com/images/media/league/fanart/o9c14r1547554186.jpg")
+        leagueImage.doenloadImage(url: league.strFanart1 ?? league.strFanart2 ?? league.strFanart3 ?? league.strFanart4 ?? "https://www.thesportsdb.com/images/media/league/fanart/o9c14r1547554186.jpg")
         leagueImage.makeRounded()
     }
 

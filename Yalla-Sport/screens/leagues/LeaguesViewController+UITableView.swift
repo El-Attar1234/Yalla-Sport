@@ -21,6 +21,7 @@ extension LeaguesViewController:UITableViewDelegate,UITableViewDataSource{
         let league = allLeagues[indexPath.row]
         print("\(league.strFanart1 ?? "no image")")
         print("\(league.strLeague ?? "no name")")
+        print("\(league.idLeague ?? "no name")")
        }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100

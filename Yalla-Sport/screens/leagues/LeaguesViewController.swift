@@ -31,7 +31,7 @@ class LeaguesViewController: UIViewController {
                 guard let leagues = response?.leagues else { return  }
                 print("Leagues 1--> \(leagues.count)")
                 for league in leagues {
-                    if league.strSport! == "Soccer"{
+                    if league.strSport! == self.sport{
                         self.downloadLeagueDataById(leagueId: league.idLeague!)
                         
                     }
