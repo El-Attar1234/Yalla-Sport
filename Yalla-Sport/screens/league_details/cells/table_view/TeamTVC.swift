@@ -11,6 +11,7 @@ import UIKit
 class TeamTVC: UITableViewCell {
 
     @IBOutlet weak var teamsCollectionView: UICollectionView!
+     var teams=[Team]()
     override func awakeFromNib() {
         super.awakeFromNib()
         teamsCollectionView.delegate = self
@@ -22,15 +23,22 @@ class TeamTVC: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    func setData(for teams :[Team]) {
+           self.teams=teams
+           teamsCollectionView.reloadData()
+       }
+    
 
 }
 extension TeamTVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return teams.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TeamsCVC", for: indexPath) as! TeamsCVC
+         cell.set(for : teams[indexPath.item])
+        
             return cell
     }
     

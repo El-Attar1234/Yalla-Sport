@@ -12,10 +12,13 @@ enum RemoteDataSourceWrapper{
     case getAllLeagues
     case getLeagueData(leagueId : String)
     case getAllEvents(leagueId : String)
+    case getUpcomingEvents(leagueId : String , round : String ,season :String)
     case getTeamDetailsByName(teamName : String)
+    case getAllTeamsInLeague(leagueName : String)
 }
 
 extension RemoteDataSourceWrapper :ApiRequestWrapper{
+    
     var baseURL: String {
         return "https://www.thesportsdb.com/api/v1/json/1"
     }
@@ -30,8 +33,13 @@ extension RemoteDataSourceWrapper :ApiRequestWrapper{
             return "/lookupleague.php"
         case .getAllEvents :
             return "/eventspastleague.php"
+        case .getUpcomingEvents :
+            return "/eventsround.php"
         case .getTeamDetailsByName :
             return "/searchteams.php"
+        case .getAllTeamsInLeague :
+            return "/search_all_teams.php"
+            
         }
         
     }
@@ -46,6 +54,11 @@ extension RemoteDataSourceWrapper :ApiRequestWrapper{
             return .requestParameters(parameters: ["id" : leagueId], encoding: URLEncoding.queryString)
         case .getTeamDetailsByName(teamName: let teamName) :
             return .requestParameters(parameters: ["t" : teamName], encoding: URLEncoding.queryString)
+        case .getUpcomingEvents(leagueId: let leagueId, round: let round, season: let season) :
+            return .requestParameters(parameters: ["id" : leagueId,"r":round ,"s":season], encoding: URLEncoding.queryString)
+            case .getAllTeamsInLeague(leagueName: let leagueName):
+                       return .requestParameters(parameters: ["l" : leagueName], encoding: URLEncoding.queryString)
+            
         default:
             return .requestPlain
         }

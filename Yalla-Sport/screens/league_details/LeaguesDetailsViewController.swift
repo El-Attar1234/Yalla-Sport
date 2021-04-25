@@ -13,11 +13,14 @@ class LeaguesDetailsViewController: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     
     var pastEventsArray=[Event]()
+    var upComingEvents=[Event]()
+     var teams=[Team]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         print("gggg")
-        downloadAllEvents()
+       downloadAllEvents()
+      //  downloadTeamDetailsByName()
+      //  downloadUpcomingEvents(leagueId: "4328", round: "34", season: "2020-2021")
     }
     
     private func downloadAllEvents(){
@@ -29,12 +32,15 @@ class LeaguesDetailsViewController: UIViewController {
             switch result {
             case .success(let response):
                 guard let events = response?.events else { return  }
-               print("gggg")
-                               print("count->>>\(events[10])")
+                let event = events[0]
+                let leagueId=event.idLeague!
+                let round=Int(event.intRound!)!
+                self.downloadUpcomingEvents(leagueId: leagueId, round: "\(round+1)", season: event.strSeason!)
+                self.downloadAllTeams(leagueName: event.strLeague!)
                 DispatchQueue.main.async {
+                             self.pastEventsArray=events
+                                self.mainTableView.reloadData()
                  
-                 self.pastEventsArray=events
-                   self.mainTableView.reloadData()
                 }
                 
                 
@@ -46,21 +52,20 @@ class LeaguesDetailsViewController: UIViewController {
         }
     }
     
-    private func downloadAllTeams(){
+    
+    private func downloadUpcomingEvents(leagueId : String , round :String ,season : String){
            let remoteDatasource = RemoteDataSource()
            //   self.view.showIndicator()
-           remoteDatasource.getAllEvents(leagueId :"4328"){[weak self] (result) in
+        remoteDatasource.getUpcomingEvents(leagueId: leagueId, round: round, season: season){[weak self] (result) in
                guard let self = self else{return}
                //     self.view.hideIndicator()
                switch result {
                case .success(let response):
                    guard let events = response?.events else { return  }
-                  print("gggg")
-                                  print("count->>>\(events[10])")
+                 
                    DispatchQueue.main.async {
-                    
-                    self.pastEventsArray=events
-                      self.mainTableView.reloadData()
+                self.upComingEvents=events
+                self.mainTableView.reloadData()
                    }
                    
                    
@@ -72,6 +77,28 @@ class LeaguesDetailsViewController: UIViewController {
            }
        }
     
+    
+    private func downloadAllTeams(leagueName :String){
+           let remoteDatasource = RemoteDataSource()
+           //   self.view.showIndicator()
+        remoteDatasource.getAllTeamsInLeague(leagueName: leagueName){[weak self] (result) in
+               guard let self = self else{return}
+               //     self.view.hideIndicator()
+               switch result {
+               case .success(let response):
+                   guard let teams = response?.teams else { return  }
+                   print("\(teams)")
+                   DispatchQueue.main.async {
+                    self.teams=teams
+                    self.mainTableView.reloadData()
+                }
+                   
+               case .failure(let error):
+                   print(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
+                   print(error.code)
+               }
+           }
+       }
     
     
 }

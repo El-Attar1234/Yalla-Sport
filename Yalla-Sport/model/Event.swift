@@ -8,6 +8,7 @@
 
 import Foundation
 struct Event: Codable {
+    var strLeague :String?
     var idEvent: String?
     var idAPIfootball: String?
     var strEvent: String?
@@ -19,6 +20,7 @@ struct Event: Codable {
     var strAwayTeam: String?
     var idHomeTeam: String?
      var strHomeTeam: String?
+      var strSeason: String?
     var idLeague: String?
     var intAwayScore: String?
     var strBanner: String?

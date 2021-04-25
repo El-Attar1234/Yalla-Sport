@@ -16,6 +16,7 @@ extension LeaguesDetailsViewController :UITableViewDelegate,UITableViewDataSourc
         switch indexPath.row {
         case 0:
            let cell=tableView.dequeueReusableCell(withIdentifier: "UpcomingTVC", for: indexPath) as! UpcomingTVC
+            cell.setData(for: upComingEvents)
               return cell
         case 1:
            let cell=tableView.dequeueReusableCell(withIdentifier: "LastTVC", for: indexPath) as! LastTVC
@@ -23,6 +24,7 @@ extension LeaguesDetailsViewController :UITableViewDelegate,UITableViewDataSourc
               return cell
         case 2:
           let  cell=tableView.dequeueReusableCell(withIdentifier: "TeamTVC", for: indexPath) as! TeamTVC
+            cell.setData(for: teams)
               return cell
         default:
             return UITableViewCell()

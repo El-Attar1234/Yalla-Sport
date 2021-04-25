@@ -7,6 +7,7 @@
 //
 import Foundation
 import Alamofire
+
 enum Endpoint{
     case staticEndpoint
     case dynamicEndPoint(path : String)
