@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftMessages
 
 class SportsVC: UIViewController {
     @IBOutlet weak var sportsCollectionView: UICollectionView!
@@ -16,12 +17,54 @@ class SportsVC: UIViewController {
     var timer :Timer!
     var currentIndex=0
     
+    override func viewWillAppear(_ animated: Bool) {
+         navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+         var isOnline = ConnectivityManager.shared.isOnline()
+                     self.displayMessage( isOnline : isOnline)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         downloadSports()
         startTimer()
     }
+    
+    func displayMessage(isOnline: Bool) {
+         
+         let myView = MessageView.viewFromNib(layout: MessageView.Layout.messageView)
+         if isOnline == false {
+             myView.configureTheme(.error)
+             myView.bodyLabel?.text = "No Internet Connection"
+         } else {
+             myView.configureTheme(.success)
+             myView.bodyLabel?.text = "You are connected"
+         }
+         
+         myView.iconImageView?.isHidden = true
+         myView.iconLabel?.isHidden = true
+         myView.titleLabel?.isHidden = true
+         myView.titleLabel?.textColor = UIColor.white
+         myView.bodyLabel?.textColor = UIColor.white
+         myView.button?.isHidden = true
+         
+         var myConfig = SwiftMessages.Config()
+         myConfig.presentationStyle = .top
+         SwiftMessages.show(config: myConfig, view: myView)
+     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     private func downloadSports(){
         let remoteDatasource = RemoteDataSource()
         //   self.view.showIndicator()
@@ -36,6 +79,7 @@ class SportsVC: UIViewController {
                     self.sportsCollectionView.reloadData()
                     self.sliderCollectionview.reloadData()
                     self.pageController.numberOfPages=self.sports.count
+                  
                 }
             case .failure(let error):
                 print(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")

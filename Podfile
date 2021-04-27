@@ -8,7 +8,8 @@ target 'Yalla-Sport' do
   # Pods for Yalla-Sport
    pod 'Alamofire'
    pod 'SDWebImage'
-
+   pod 'ReachabilitySwift'
+   pod 'SwiftMessages'
 
   target 'Yalla-SportTests' do
     inherit! :search_paths

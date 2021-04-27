@@ -17,13 +17,16 @@ extension LeaguesViewController:UITableViewDelegate,UITableViewDataSource{
         cell.set(league: allLeagues[indexPath.row])
            return cell
        }
+    
        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let league = allLeagues[indexPath.row]
-        print("\(league.strFanart1 ?? "no image")")
-        print("\(league.strLeague ?? "no name")")
-        print("\(league.idLeague ?? "no name")")
+          let detailsVC   = self.storyboard?.instantiateViewController(identifier: "LeaguesDetailsViewController") as! LeaguesDetailsViewController
+            detailsVC.league=league
+             self.navigationController?.pushViewController(detailsVC, animated: true)
        }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
+    
 }

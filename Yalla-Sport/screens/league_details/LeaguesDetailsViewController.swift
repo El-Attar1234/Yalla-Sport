@@ -15,13 +15,29 @@ class LeaguesDetailsViewController: UIViewController {
     var pastEventsArray=[Event]()
     var upComingEvents=[Event]()
      var teams=[Team]()
+    var league:League!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
        downloadAllEvents()
       //  downloadTeamDetailsByName()
       //  downloadUpcomingEvents(leagueId: "4328", round: "34", season: "2020-2021")
     }
+    
+    private func configure(){
+        let button1 = UIBarButtonItem(image: UIImage(systemName: "heart.fill"), style: .plain, target: self, action: #selector(addToFavourites)) 
+        self.navigationItem.rightBarButtonItem  = button1
+        
+        
+    }
+    
+    @objc func addToFavourites(){
+        let localData = PersistenceManager.shared
+        localData.addToFavourites(favLeague: self.league)
+    }
+    
+    
     
     private func downloadAllEvents(){
         let remoteDatasource = RemoteDataSource()
@@ -51,8 +67,6 @@ class LeaguesDetailsViewController: UIViewController {
             }
         }
     }
-    
-    
     private func downloadUpcomingEvents(leagueId : String , round :String ,season : String){
            let remoteDatasource = RemoteDataSource()
            //   self.view.showIndicator()
@@ -76,8 +90,6 @@ class LeaguesDetailsViewController: UIViewController {
                }
            }
        }
-    
-    
     private func downloadAllTeams(leagueName :String){
            let remoteDatasource = RemoteDataSource()
            //   self.view.showIndicator()
