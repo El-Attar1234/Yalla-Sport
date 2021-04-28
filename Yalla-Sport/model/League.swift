@@ -8,13 +8,21 @@
 
 import Foundation
 struct League: Codable {
-      var idLeague           : String?
-      var strLeague          : String?
-      var strLeagueAlternate : String?
-      var strSport           : String?
-      var strYoutube         : String?
-      var strFanart1         : String?
-      var strFanart2         : String?
-      var strFanart3         : String?
-      var strFanart4         : String?
+    var idLeague           : String?
+    var strLeague          : String?
+    var strLeagueAlternate : String?
+    var strSport           : String?
+    var strYoutube         : String?
+    var strFanart1         : String?
+    var strFanart2         : String?
+    var strFanart3         : String?
+    var strFanart4         : String?
+    var strBanner         : String?
+    var strBadge         : String?
+    var strLogo         : String?
+    var strPoster         : String?
+    var strTrophy         : String?
+    
+    
+    
 }

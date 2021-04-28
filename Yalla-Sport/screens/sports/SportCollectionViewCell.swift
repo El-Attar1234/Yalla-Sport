@@ -21,7 +21,7 @@ class SportCollectionViewCell: UICollectionViewCell {
 
 extension UIImageView{
    func doenloadImage(url:String){
-        self.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: "movie_image"))
+        self.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: "no-image"))
     }
     func makeRounded() {
 

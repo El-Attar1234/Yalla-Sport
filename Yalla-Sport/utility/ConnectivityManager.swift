@@ -12,7 +12,7 @@ import Reachability
 class ConnectivityManager{
     static let shared = ConnectivityManager()
     let reachability =  try! Reachability()
-    init() {
+    private init() {
         
     }
     

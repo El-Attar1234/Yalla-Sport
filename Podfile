@@ -8,6 +8,7 @@ target 'Yalla-Sport' do
   # Pods for Yalla-Sport
    pod 'Alamofire'
    pod 'SDWebImage'
+   pod 'NVActivityIndicatorView'
    pod 'ReachabilitySwift'
    pod 'SwiftMessages'
 
