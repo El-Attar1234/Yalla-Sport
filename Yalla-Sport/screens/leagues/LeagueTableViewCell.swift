@@ -34,18 +34,18 @@ class LeagueTableViewCell: UITableViewCell {
     }
     func set(league : League){
         leagueName.text = league.strLeague
-        print("link ->\(league.strYoutube)")
         if league.strYoutube!.isEmpty {
-            youtubeButton.isHidden = false
-            self.youtubeLink  = league.strYoutube!
-            youtubeButton.setImage(UIImage(named: "youtube")!.withRenderingMode(.alwaysOriginal), for: .normal)
-            youtubeButton.layer.cornerRadius = 10
-            let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.youtubeTaped))
-            youtubeButton.addGestureRecognizer(tapGR)
-            youtubeButton.isUserInteractionEnabled = true
+          youtubeButton.isHidden = true
         }
-        else{
-            youtubeButton.isHidden = true
+        else{  youtubeButton.isHidden = false
+                      self.youtubeLink  = league.strYoutube!
+                      youtubeButton.setImage(UIImage(named: "youtube")!.withRenderingMode(.alwaysOriginal), for: .normal)
+                      youtubeButton.layer.cornerRadius = 10
+                      let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.youtubeTaped))
+                      youtubeButton.addGestureRecognizer(tapGR)
+                      youtubeButton.isUserInteractionEnabled = true
+            
+            
         }
         
         
