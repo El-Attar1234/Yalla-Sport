@@ -40,6 +40,9 @@ class PersistenceManager{
         entityRow.setValue(favLeague.strLeague, forKey: "strLeague")
         entityRow.setValue(favLeague.idLeague, forKey: "idLeague")
         entityRow.setValue(favLeague.strYoutube, forKey: "strYoutube")
+        let strImage = favLeague.strFanart1 ?? favLeague.strFanart2 ?? favLeague.strFanart3 ?? favLeague.strFanart4 ?? favLeague.strBadge ?? favLeague.strLogo ?? favLeague.strTrophy ??  "aliiiiii"
+      //  print(favLeague)
+               entityRow.setValue(strImage, forKey: "strImage")
         try?self.context.save()
         print("added successfully")
     }
@@ -58,7 +61,20 @@ class PersistenceManager{
         
         
     }
-    
+    func isFavourited(strLeague :String )->Bool{
+        let fetchRequest=NSFetchRequest<NSManagedObject>(entityName:entityName)
+        let storedFavourites=try?self.context.fetch(fetchRequest)
+        guard let favourites = storedFavourites else {
+                   return false
+               }
+        for league in favourites {
+            if league.value(forKey: "strLeague") as! String == strLeague {
+              return true
+                }
+        }
+        return false
+        
+    }
     
     
 }

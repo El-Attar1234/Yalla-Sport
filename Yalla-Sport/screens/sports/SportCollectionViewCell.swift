@@ -23,12 +23,33 @@ extension UIImageView{
    func doenloadImage(url:String){
         self.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: "no-image"))
     }
-    func makeRounded() {
+  
+}
 
-           self.layer.borderWidth = 1
-           self.layer.masksToBounds = false
-           self.layer.borderColor = UIColor.black.cgColor
-           self.layer.cornerRadius = self.frame.height / 2
-           self.clipsToBounds = true
-       }
+extension UIView{
+    func makeRounded() {
+             self.layer.borderWidth = 1
+             self.layer.masksToBounds = false
+             self.layer.borderColor = UIColor.black.cgColor
+             self.layer.cornerRadius = self.frame.height / 2
+             self.clipsToBounds = true
+         }
+    
+   
+}
+extension UITableViewCell{
+    func makeCellRounded(){
+        contentView.layer.cornerRadius = 10
+        contentView.layer.borderWidth = 1.0
+        contentView.layer.borderColor = UIColor.clear.cgColor
+        contentView.layer.masksToBounds = true
+
+     layer.shadowColor = UIColor.lightGray.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 0.5)
+       layer.shadowRadius = 6.0
+        layer.shadowOpacity = 0.3
+        layer.masksToBounds = false
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
+        layer.backgroundColor = UIColor.clear.cgColor
+    }
 }

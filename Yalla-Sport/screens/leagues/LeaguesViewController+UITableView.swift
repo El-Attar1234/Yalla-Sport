@@ -28,7 +28,7 @@ extension LeaguesViewController:UITableViewDelegate,UITableViewDataSource ,Youtu
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell=tableView.dequeueReusableCell(withIdentifier: "LeagueTableViewCell", for: indexPath) as! LeagueTableViewCell
-      
+        
         if isFiltered{
             cell.set(league:filteredLeagues[indexPath.row])
         }
@@ -49,7 +49,9 @@ extension LeaguesViewController:UITableViewDelegate,UITableViewDataSource ,Youtu
         
         let detailsVC   = self.storyboard?.instantiateViewController(identifier: "LeaguesDetailsViewController") as! LeaguesDetailsViewController
         detailsVC.league=league
-        self.navigationController?.pushViewController(detailsVC, animated: true)
+     //  self.present(detailsVC, animated: true)
+        
+      self.navigationController?.pushViewController(detailsVC, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100

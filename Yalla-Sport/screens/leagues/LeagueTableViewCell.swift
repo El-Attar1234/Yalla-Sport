@@ -20,8 +20,9 @@ class LeagueTableViewCell: UITableViewCell {
     @IBOutlet weak var leagueName: UILabel!
     @IBOutlet weak var youtubeButton: UIButton!
     
-    var youtubeLink : String!
+     var youtubeLink : String!
      weak var youtubeDelegat : YoutubeActionDelegate!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -26,7 +26,10 @@ class SportsVC: UIViewController {
         
     }
     override func viewWillAppear(_ animated: Bool) {
+          super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
+        self.tabBarController?.tabBar.isHidden = false
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         addConnectivityObserver()

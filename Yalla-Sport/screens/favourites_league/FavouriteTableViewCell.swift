@@ -8,10 +8,18 @@
 
 import UIKit
 
+
+
+
 class FavouriteTableViewCell: UITableViewCell {
 
     @IBOutlet weak var leagueName: UILabel!
     @IBOutlet weak var leagueImage: UIImageView!
+    @IBOutlet weak var youtubeButton: UIButton!
+    
+    var youtubeLink : String!
+    weak var youtubeDelegat : YoutubeActionDelegate!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,12 +32,25 @@ class FavouriteTableViewCell: UITableViewCell {
     }
     func setData(for league : League){
         leagueName.text = league.strLeague
+        if league.strYoutube!.isEmpty {
+                youtubeButton.isHidden = true
+              }
+              else{  youtubeButton.isHidden = false
+                            self.youtubeLink  = league.strYoutube!
+                            youtubeButton.setImage(UIImage(named: "youtube")!.withRenderingMode(.alwaysOriginal), for: .normal)
+                            youtubeButton.layer.cornerRadius = 10
+                            let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.youtubeTaped))
+                            youtubeButton.addGestureRecognizer(tapGR)
+                            youtubeButton.isUserInteractionEnabled = true
+                  
+                  
+              }
         leagueImage.makeRounded()
-        //leagueImage.doenloadImage(url: league.str)
+        leagueImage.doenloadImage(url: league.strBadge ?? "")
     }
     
-    
-    @IBAction func youTubeAction(_ sender: Any) {
-    }
+    @objc func youtubeTaped(_ sender: UITapGestureRecognizer ) {
+           youtubeDelegat.buttonPressed(link: "https://\(youtubeLink!)")
+       }
     
 }

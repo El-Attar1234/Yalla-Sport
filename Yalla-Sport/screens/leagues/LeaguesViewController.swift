@@ -26,9 +26,14 @@ class LeaguesViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: true)
+          super.viewWillDisappear(animated)
+         navigationController?.setNavigationBarHidden(false, animated: true)
+           self.tabBarController?.tabBar.isHidden = true
+       
+        
     }
     
+   
     
     private func downloadAllLeagues(){
         viewModel.checkIfDataIsLoading = { isLoading in

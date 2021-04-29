@@ -21,7 +21,7 @@ class UpcomingCVC: UICollectionViewCell {
      downloadTeamDetailsByName(teamName: event.strAwayTeam!, image: awayTeamImage)
            homeTeamName.text =  event.strHomeTeam
            awayTeamName.text =  event.strAwayTeam
-   
+        timeDateLabe.text   = event.strTimestamp?.convertToDisplayFormat()
        }
     
      private func downloadTeamDetailsByName(teamName :String ,image :UIImageView){

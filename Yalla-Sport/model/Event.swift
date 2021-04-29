@@ -8,6 +8,8 @@
 
 import Foundation
 struct Event: Codable {
+    
+    var strTimestamp : String?
     var strLeague :String?
     var idEvent: String?
     var idAPIfootball: String?

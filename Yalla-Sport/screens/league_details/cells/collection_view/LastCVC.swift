@@ -24,6 +24,9 @@ class LastCVC: UICollectionViewCell {
         awayTeamName.text =  event.strAwayTeam
         homeTeamBadge.text = event.intHomeScore
         awayTeamBadge.text = event.intAwayScore
+        homeTeamBadge.makeRounded()
+        awayTeamBadge.makeRounded()
+         timeDateLabe.text   = event.strTimestamp?.convertToDisplayFormat()
     }
     
     

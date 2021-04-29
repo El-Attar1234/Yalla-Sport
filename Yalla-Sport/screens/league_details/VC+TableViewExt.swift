@@ -17,6 +17,7 @@ extension LeaguesDetailsViewController :UITableViewDelegate,UITableViewDataSourc
         case 0:
            let cell=tableView.dequeueReusableCell(withIdentifier: "UpcomingTVC", for: indexPath) as! UpcomingTVC
             cell.setData(for: upComingEvents)
+           cell.makeCellRounded()
               return cell
         case 1:
            let cell=tableView.dequeueReusableCell(withIdentifier: "LastTVC", for: indexPath) as! LastTVC
@@ -24,7 +25,7 @@ extension LeaguesDetailsViewController :UITableViewDelegate,UITableViewDataSourc
               return cell
         case 2:
           let  cell=tableView.dequeueReusableCell(withIdentifier: "TeamTVC", for: indexPath) as! TeamTVC
-            cell.setData(for: teams)
+          cell.setData(for: teams , delegate : self)
               return cell
         default:
             return UITableViewCell()

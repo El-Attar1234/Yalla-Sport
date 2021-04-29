@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SafariServices
 class FavouritesVC: UIViewController {
   
     @IBOutlet weak var favouritesTableView: UITableView!
@@ -33,6 +33,9 @@ class FavouritesVC: UIViewController {
         for fav in favourites {
             var league = League()
             league.strLeague = fav.value(forKey: "strLeague") as! String
+            league.strYoutube = fav.value(forKey: "strYoutube") as! String
+             league.idLeague = fav.value(forKey: "idLeague") as! String
+            league.strBadge = fav.value(forKey: "strImage") as? String
             self.favourites.append(league)
           }
         self.favouritesTableView.reloadData()
@@ -44,14 +47,22 @@ class FavouritesVC: UIViewController {
 
 
 
-extension FavouritesVC :UITableViewDelegate ,UITableViewDataSource{
+extension FavouritesVC :UITableViewDelegate ,UITableViewDataSource,YoutubeActionDelegate {
+func buttonPressed(link: String) {
+      guard let url=URL(string: link)else {
+                 print("error")
+                 return}
+               let safariVC = SFSafariViewController(url: url)
+              present(safariVC, animated: true)
+}
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        print("length--favourites------->>\(favourites[0])")
         return favourites.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        let cell=tableView.dequeueReusableCell(withIdentifier: "FavouriteTableViewCell", for: indexPath) as! FavouriteTableViewCell
-        
+        cell.youtubeDelegat = self
         cell.setData(for: favourites[indexPath.row])
            return cell
     }
@@ -65,6 +76,19 @@ extension FavouritesVC :UITableViewDelegate ,UITableViewDataSource{
 
       }
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         var league :League!
+             league = favourites[indexPath.row]
+         let detailsVC   = self.storyboard?.instantiateViewController(identifier: "LeaguesDetailsViewController") as! LeaguesDetailsViewController
+         detailsVC.league=league
+      //  self.present(detailsVC, animated: true)
+         
+       self.present(detailsVC, animated: true)
+     }
     
     
 }

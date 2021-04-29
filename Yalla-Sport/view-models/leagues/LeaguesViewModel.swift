@@ -36,8 +36,6 @@ class LeaguesViewModel :NSObject{
     override init() {
         super.init()
         remoteDataSource  = RemoteDataSource()
-        
-        
     }
     
     
