@@ -56,12 +56,12 @@ class LeaguesDetailsViewController: UIViewController {
         if isFavourited {
             favouriteButton.tintColor = .gray
             localData.removeLeague(strLeague: league.strLeague ?? "")
-          
+          self.presentGFAlertOnMainThread(title: "Success", message: " you remove this league from your favourites", buttonTitle: "OK")
         }
         else{
             favouriteButton.tintColor = .red
             localData.addToFavourites(favLeague: self.league)
-              self.presentGFAlertOnMainThread(title: "Success", message: "congratulation , you added this to your favourites 🥳", buttonTitle: "OK")
+              self.presentGFAlertOnMainThread(title: "Success", message: "congratulations , you added this league to your favourites 🥳", buttonTitle: "OK")
             
         }
         

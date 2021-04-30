@@ -140,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318.84057971014494" y="-381.02678571428572"/>
+            <point key="canvasLocation" x="1228.985507246377" y="-381.02678571428572"/>
         </scene>
         <!--Leagues View Controller-->
         <scene sceneID="HUF-Ir-EC6">
@@ -225,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9M-zX-EvS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1019" y="-389"/>
+            <point key="canvasLocation" x="1928.985507246377" y="-389.0625"/>
         </scene>
         <!--Team DetailsVC-->
         <scene sceneID="RfI-3m-VLf">
@@ -414,7 +414,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeZ-Ui-fpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2972" y="-405"/>
+            <point key="canvasLocation" x="3881.1594202898555" y="-405.13392857142856"/>
         </scene>
         <!--Leagues Details View Controller-->
         <scene sceneID="NsG-Dz-3yE">
@@ -818,9 +818,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWx-Hn-h9R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1959" y="-405"/>
+            <point key="canvasLocation" x="2868.115942028986" y="-405.13392857142856"/>
         </scene>
-        <!--Favourites-->
+        <!--FavouritesVC-->
         <scene sceneID="1sq-fP-shr">
             <objects>
                 <viewController id="42L-Vb-Tw1" customClass="FavouritesVC" customModule="Yalla_Sport" customModuleProvider="target" sceneMemberID="viewController">
@@ -829,7 +829,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="19Y-Sg-RQQ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FavouriteTableViewCell" rowHeight="86" id="r5f-AM-mYh" customClass="FavouriteTableViewCell" customModule="Yalla_Sport" customModuleProvider="target">
@@ -846,7 +846,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IO-qm-PWx">
-                                                    <rect key="frame" x="89" y="33" width="207" height="20.5"/>
+                                                    <rect key="frame" x="94" y="33" width="207" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -864,7 +864,7 @@
                                             <constraints>
                                                 <constraint firstItem="eTy-Du-JvV" firstAttribute="leading" secondItem="CbS-Us-SB3" secondAttribute="leading" constant="10" id="2b8-34-Ou5"/>
                                                 <constraint firstAttribute="trailing" secondItem="Xa8-y6-Uvr" secondAttribute="trailing" constant="15" id="7qX-Ba-zXH"/>
-                                                <constraint firstItem="5IO-qm-PWx" firstAttribute="leading" secondItem="eTy-Du-JvV" secondAttribute="trailing" constant="10" id="9a6-uR-PUD"/>
+                                                <constraint firstItem="5IO-qm-PWx" firstAttribute="leading" secondItem="eTy-Du-JvV" secondAttribute="trailing" constant="15" id="9a6-uR-PUD"/>
                                                 <constraint firstItem="eTy-Du-JvV" firstAttribute="centerY" secondItem="CbS-Us-SB3" secondAttribute="centerY" id="Dg5-bR-dOH"/>
                                                 <constraint firstItem="5IO-qm-PWx" firstAttribute="width" secondItem="CbS-Us-SB3" secondAttribute="width" multiplier="0.5" id="SXs-Af-erf"/>
                                                 <constraint firstItem="Xa8-y6-Uvr" firstAttribute="width" secondItem="CbS-Us-SB3" secondAttribute="width" multiplier="0.15" id="f9o-TJ-VUu"/>
@@ -895,16 +895,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dFj-kK-m1l"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favourites" image="heart.fill" catalog="system" id="tT3-Yw-uB2">
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="M4k-uM-04u"/>
                     <connections>
                         <outlet property="favouritesTableView" destination="19Y-Sg-RQQ" id="jD2-pt-6JX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="erH-eq-HUo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1713.0434782608697" y="-157.36607142857142"/>
+            <point key="canvasLocation" x="-802.89855072463774" y="-157.36607142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YLs-5t-waQ">
@@ -920,7 +918,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="rAh-cy-L7J" kind="relationship" relationship="viewControllers" id="ZJv-kE-ae5"/>
-                        <segue destination="42L-Vb-Tw1" kind="relationship" relationship="viewControllers" id="u2d-ah-S6O"/>
+                        <segue destination="inN-vo-qyH" kind="relationship" relationship="viewControllers" id="u2d-ah-S6O"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KEo-2W-jxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -944,7 +942,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ong-Ed-2E5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-591.304347826087" y="-381.02678571428572"/>
+            <point key="canvasLocation" x="318.84057971014494" y="-381.02678571428572"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="o7q-Lw-eHc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="inN-vo-qyH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favourites" image="heart.fill" catalog="system" id="tT3-Yw-uB2">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vlO-cO-mbz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="42L-Vb-Tw1" kind="relationship" relationship="rootViewController" id="zBc-Wf-uP9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vJ-dP-1tD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1713.0434782608697" y="-157.36607142857142"/>
         </scene>
     </scenes>
     <resources>
