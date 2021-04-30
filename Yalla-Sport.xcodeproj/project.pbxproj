@@ -17,6 +17,7 @@
 		D25B1F7C2637D7F8007AEF17 /* SportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B1F7B2637D7F8007AEF17 /* SportsViewModel.swift */; };
 		D25B1F7E2637DE31007AEF17 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B1F7D2637DE31007AEF17 /* UIViewController+Ext.swift */; };
 		D25B59BC2638E5FB00A9C2AC /* LeaguesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B59BB2638E5FB00A9C2AC /* LeaguesViewModel.swift */; };
+		D265A945263BDEB1003C8D27 /* SportsScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265A944263BDEB1003C8D27 /* SportsScreenTest.swift */; };
 		D2732D5A263A508A00EF32A3 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D59263A508A00EF32A3 /* TeamViewModel.swift */; };
 		D2732D5C263A5C5400EF32A3 /* TeamDetails+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D5B263A5C5400EF32A3 /* TeamDetails+Extension.swift */; };
 		D2732D5E263A7F4F00EF32A3 /* HelperExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D5D263A7F4F00EF32A3 /* HelperExtentions.swift */; };
@@ -62,6 +63,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D265A947263BDEB1003C8D27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D29C9B34262EF07800817967 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D29C9B3B262EF07800817967;
+			remoteInfo = "Yalla-Sport";
+		};
 		D29C9B56262EF07D00817967 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D29C9B34262EF07800817967 /* Project object */;
@@ -94,6 +102,9 @@
 		D25B1F7B2637D7F8007AEF17 /* SportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewModel.swift; sourceTree = "<group>"; };
 		D25B1F7D2637DE31007AEF17 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		D25B59BB2638E5FB00A9C2AC /* LeaguesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewModel.swift; sourceTree = "<group>"; };
+		D265A942263BDEB1003C8D27 /* SportsScreenTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsScreenTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D265A944263BDEB1003C8D27 /* SportsScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsScreenTest.swift; sourceTree = "<group>"; };
+		D265A946263BDEB1003C8D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2732D59263A508A00EF32A3 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		D2732D5B263A5C5400EF32A3 /* TeamDetails+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TeamDetails+Extension.swift"; sourceTree = "<group>"; };
 		D2732D5D263A7F4F00EF32A3 /* HelperExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtentions.swift; sourceTree = "<group>"; };
@@ -146,6 +157,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D265A93F263BDEB1003C8D27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D29C9B39262EF07800817967 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,6 +242,15 @@
 				D25B59BB2638E5FB00A9C2AC /* LeaguesViewModel.swift */,
 			);
 			path = leagues;
+			sourceTree = "<group>";
+		};
+		D265A943263BDEB1003C8D27 /* SportsScreenTest */ = {
+			isa = PBXGroup;
+			children = (
+				D265A944263BDEB1003C8D27 /* SportsScreenTest.swift */,
+				D265A946263BDEB1003C8D27 /* Info.plist */,
+			);
+			path = SportsScreenTest;
 			sourceTree = "<group>";
 		};
 		D2732D58263A506F00EF32A3 /* team */ = {
@@ -308,6 +335,7 @@
 				D29C9B3E262EF07800817967 /* Yalla-Sport */,
 				D29C9B58262EF07D00817967 /* Yalla-SportTests */,
 				D29C9B63262EF07D00817967 /* Yalla-SportUITests */,
+				D265A943263BDEB1003C8D27 /* SportsScreenTest */,
 				D29C9B3D262EF07800817967 /* Products */,
 				F26CD889AA28B99138A53327 /* Pods */,
 				D785A882C0125F3C5CEF0362 /* Frameworks */,
@@ -320,6 +348,7 @@
 				D29C9B3C262EF07800817967 /* Yalla-Sport.app */,
 				D29C9B55262EF07D00817967 /* Yalla-SportTests.xctest */,
 				D29C9B60262EF07D00817967 /* Yalla-SportUITests.xctest */,
+				D265A942263BDEB1003C8D27 /* SportsScreenTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -486,6 +515,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D265A941263BDEB1003C8D27 /* SportsScreenTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D265A94B263BDEB1003C8D27 /* Build configuration list for PBXNativeTarget "SportsScreenTest" */;
+			buildPhases = (
+				D265A93E263BDEB1003C8D27 /* Sources */,
+				D265A93F263BDEB1003C8D27 /* Frameworks */,
+				D265A940263BDEB1003C8D27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D265A948263BDEB1003C8D27 /* PBXTargetDependency */,
+			);
+			name = SportsScreenTest;
+			productName = SportsScreenTest;
+			productReference = D265A942263BDEB1003C8D27 /* SportsScreenTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D29C9B3B262EF07800817967 /* Yalla-Sport */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D29C9B69262EF07D00817967 /* Build configuration list for PBXNativeTarget "Yalla-Sport" */;
@@ -554,6 +601,10 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = ITI;
 				TargetAttributes = {
+					D265A941263BDEB1003C8D27 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = D29C9B3B262EF07800817967;
+					};
 					D29C9B3B262EF07800817967 = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -583,11 +634,19 @@
 				D29C9B3B262EF07800817967 /* Yalla-Sport */,
 				D29C9B54262EF07D00817967 /* Yalla-SportTests */,
 				D29C9B5F262EF07D00817967 /* Yalla-SportUITests */,
+				D265A941263BDEB1003C8D27 /* SportsScreenTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D265A940263BDEB1003C8D27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D29C9B3A262EF07800817967 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -718,6 +777,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D265A93E263BDEB1003C8D27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D265A945263BDEB1003C8D27 /* SportsScreenTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D29C9B38262EF07800817967 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -788,6 +855,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D265A948263BDEB1003C8D27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D29C9B3B262EF07800817967 /* Yalla-Sport */;
+			targetProxy = D265A947263BDEB1003C8D27 /* PBXContainerItemProxy */;
+		};
 		D29C9B57262EF07D00817967 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D29C9B3B262EF07800817967 /* Yalla-Sport */;
@@ -820,6 +892,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D265A949263BDEB1003C8D27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = SportsScreenTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.SportsScreenTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yalla-Sport.app/Yalla-Sport";
+			};
+			name = Debug;
+		};
+		D265A94A263BDEB1003C8D27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3285PZR24;
+				INFOPLIST_FILE = SportsScreenTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "native-mobile-iti.SportsScreenTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yalla-Sport.app/Yalla-Sport";
+			};
+			name = Release;
+		};
 		D29C9B67262EF07D00817967 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1063,6 +1175,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D265A94B263BDEB1003C8D27 /* Build configuration list for PBXNativeTarget "SportsScreenTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D265A949263BDEB1003C8D27 /* Debug */,
+				D265A94A263BDEB1003C8D27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D29C9B37262EF07800817967 /* Build configuration list for PBXProject "Yalla-Sport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
