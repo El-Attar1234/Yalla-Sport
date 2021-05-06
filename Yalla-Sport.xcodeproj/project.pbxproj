@@ -17,7 +17,7 @@
 		D25B1F7C2637D7F8007AEF17 /* SportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B1F7B2637D7F8007AEF17 /* SportsViewModel.swift */; };
 		D25B1F7E2637DE31007AEF17 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B1F7D2637DE31007AEF17 /* UIViewController+Ext.swift */; };
 		D25B59BC2638E5FB00A9C2AC /* LeaguesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B59BB2638E5FB00A9C2AC /* LeaguesViewModel.swift */; };
-		D265A945263BDEB1003C8D27 /* SportsScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265A944263BDEB1003C8D27 /* SportsScreenTest.swift */; };
+		D265A94D263BE07E003C8D27 /* SportsScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D265A94C263BE07E003C8D27 /* SportsScreenTest.swift */; };
 		D2732D5A263A508A00EF32A3 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D59263A508A00EF32A3 /* TeamViewModel.swift */; };
 		D2732D5C263A5C5400EF32A3 /* TeamDetails+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D5B263A5C5400EF32A3 /* TeamDetails+Extension.swift */; };
 		D2732D5E263A7F4F00EF32A3 /* HelperExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2732D5D263A7F4F00EF32A3 /* HelperExtentions.swift */; };
@@ -103,8 +103,7 @@
 		D25B1F7D2637DE31007AEF17 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		D25B59BB2638E5FB00A9C2AC /* LeaguesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewModel.swift; sourceTree = "<group>"; };
 		D265A942263BDEB1003C8D27 /* SportsScreenTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsScreenTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D265A944263BDEB1003C8D27 /* SportsScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsScreenTest.swift; sourceTree = "<group>"; };
-		D265A946263BDEB1003C8D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D265A94C263BE07E003C8D27 /* SportsScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsScreenTest.swift; sourceTree = "<group>"; };
 		D2732D59263A508A00EF32A3 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		D2732D5B263A5C5400EF32A3 /* TeamDetails+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TeamDetails+Extension.swift"; sourceTree = "<group>"; };
 		D2732D5D263A7F4F00EF32A3 /* HelperExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtentions.swift; sourceTree = "<group>"; };
@@ -244,15 +243,6 @@
 			path = leagues;
 			sourceTree = "<group>";
 		};
-		D265A943263BDEB1003C8D27 /* SportsScreenTest */ = {
-			isa = PBXGroup;
-			children = (
-				D265A944263BDEB1003C8D27 /* SportsScreenTest.swift */,
-				D265A946263BDEB1003C8D27 /* Info.plist */,
-			);
-			path = SportsScreenTest;
-			sourceTree = "<group>";
-		};
 		D2732D58263A506F00EF32A3 /* team */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,7 +325,6 @@
 				D29C9B3E262EF07800817967 /* Yalla-Sport */,
 				D29C9B58262EF07D00817967 /* Yalla-SportTests */,
 				D29C9B63262EF07D00817967 /* Yalla-SportUITests */,
-				D265A943263BDEB1003C8D27 /* SportsScreenTest */,
 				D29C9B3D262EF07800817967 /* Products */,
 				F26CD889AA28B99138A53327 /* Pods */,
 				D785A882C0125F3C5CEF0362 /* Frameworks */,
@@ -385,6 +374,7 @@
 			children = (
 				D29C9B64262EF07D00817967 /* Yalla_SportUITests.swift */,
 				D29C9B66262EF07D00817967 /* Info.plist */,
+				D265A94C263BE07E003C8D27 /* SportsScreenTest.swift */,
 			);
 			path = "Yalla-SportUITests";
 			sourceTree = "<group>";
@@ -781,7 +771,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D265A945263BDEB1003C8D27 /* SportsScreenTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,6 +837,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D265A94D263BE07E003C8D27 /* SportsScreenTest.swift in Sources */,
 				D29C9B65262EF07D00817967 /* Yalla_SportUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

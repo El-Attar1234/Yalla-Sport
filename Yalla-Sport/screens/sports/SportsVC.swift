@@ -13,6 +13,7 @@ class SportsVC: UIViewController {
     @IBOutlet weak var sportsCollectionView: UICollectionView!
     @IBOutlet weak var pageController: UIPageControl!
     @IBOutlet weak var sliderCollectionview: UICollectionView!
+    var isOnline:Bool?
     
     //refactor
     //  var isOnline:Bool!
@@ -23,32 +24,53 @@ class SportsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addConnectivityObserver()
         
     }
     override func viewWillAppear(_ animated: Bool) {
-          super.viewWillDisappear(animated)
+        super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
         self.tabBarController?.tabBar.isHidden = false
         
     }
     override func viewDidAppear(_ animated: Bool) {
-        addConnectivityObserver()
+        checkConnection()
+        
     }
     fileprivate func addConnectivityObserver(){
         viewModel.checkIfUserisOnline = { [weak self] isOnline in
             guard let self = self else {return}
-            self.showConnectivityMessage(isOnline: isOnline)
             if isOnline {
+                self.isOnline = isOnline
                 self.loadData()
             }
+          
+        }
+        viewModel.checkConnection()
+        
+    }
+    fileprivate func checkConnection(){
+        viewModel.checkIfUserisOnline = { [weak self] isOnline in
+            guard let self = self else {return}
+            self.showConnectivityMessage(isOnline: isOnline)
+            if isOnline {
+                 self.removeConnectionMessage()
+                self.showComponent()
+               
+            }
             else{
-                //no internet
-                  self.addConnectionlessImage()
+                self.hideComponent()
+                self.addConnectionlessImage()
             }
         }
         viewModel.checkConnection()
         
     }
+    
+    
+    
+    
+    
     
     fileprivate func loadData(){
         viewModel.checkIfDataIsLoading = { isLoading in
@@ -88,10 +110,18 @@ class SportsVC: UIViewController {
         pageController.currentPage=currentIndex
     }
     
-
     
+    func hideComponent()  {
+        self.sportsCollectionView.isHidden = true
+        self.sliderCollectionview.isHidden = true
+        self.pageController.isHidden = true
+    }
     
-    
+    func showComponent()  {
+        self.sportsCollectionView.isHidden = false
+        self.sliderCollectionview.isHidden = false
+        self.pageController.isHidden = false
+    }
 }
 
 

@@ -71,22 +71,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "75D5DFD9-9B59-4BD7-BFC0-F7EEE2A50749"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Yalla-Sport/screens/sports/SportsVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "addConnectivityObserver()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "60F71D4E-F026-4415-97F2-55A468859A18"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -94,8 +78,8 @@
             filePath = "Yalla-Sport/screens/sports/SportsVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>

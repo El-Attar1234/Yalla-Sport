@@ -11,8 +11,9 @@ import NVActivityIndicatorView
 import SwiftMessages
 
 fileprivate var activityIndicator : NVActivityIndicatorView!
+fileprivate var imageView : UIImageView?
 extension UIViewController{
-     func showLoadingIndicator(){
+    func showLoadingIndicator(){
         let xAxis = self.view.center.x
         let yAxis = self.view.center.y
         let frame = CGRect(x: (xAxis - 50), y: (yAxis - 50), width: 60, height: 60)
@@ -22,13 +23,13 @@ extension UIViewController{
         self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
     }
-     func hideLoadingIndicator() {
+    func hideLoadingIndicator() {
         DispatchQueue.main.async {
-            activityIndicator.removeFromSuperview()
+            activityIndicator?.removeFromSuperview()
             activityIndicator = nil
         }
     }
-     func showConnectivityMessage(isOnline : Bool) {
+    func showConnectivityMessage(isOnline : Bool) {
         let myView = MessageView.viewFromNib(layout: MessageView.Layout.messageView)
         if isOnline == true {
             myView.configureTheme(.success)
@@ -50,24 +51,28 @@ extension UIViewController{
         myConfig.presentationStyle = .top
         SwiftMessages.show(config: myConfig, view: myView)
     }
-     func addConnectionlessImage(){
-        let imageView=UIImageView()
-        view.addSubview(imageView)
-        imageView.image = UIImage(named: "no-wifi")
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
-        imageView.tintColor   = .label
+    func addConnectionlessImage(){
+        imageView=UIImageView()
+        view.addSubview(imageView!)
+        imageView?.image = UIImage(named: "no-wifi")
+        imageView?.translatesAutoresizingMaskIntoConstraints = false
+        imageView?.contentMode = .scaleAspectFit
+        imageView?.tintColor   = .label
         
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: view.topAnchor),
-            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 20),
-            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -20)
+            imageView!.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView!.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 20),
+            imageView!.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            imageView!.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -20)
             ]
         )
     }
     
-    
+    func removeConnectionMessage(){
+        
+        imageView?.removeFromSuperview()
+        imageView = nil
+    }
     func presentGFAlertOnMainThread(title: String, message: String, buttonTitle: String) {
         DispatchQueue.main.async {
             let alertVC = AlertVC(title: title, message: message, buttonTitle: buttonTitle)

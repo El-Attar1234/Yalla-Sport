@@ -56,6 +56,7 @@ class LeaguesViewModel :NSObject{
                 
             case .failure(let error):
                 self.isSuccess = false
+                print("\(error)")
                 /*  print(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
                  print(error.code)*/
             }
@@ -73,6 +74,7 @@ class LeaguesViewModel :NSObject{
                 self.allLeagues.append(leagues[0])
                 self.isSuccess = true
             case .failure(let error):
+                 print("\(error)")
                 /*  print(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
                  print(error.code)*/
                 self.isSuccess = false

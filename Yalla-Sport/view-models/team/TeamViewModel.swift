@@ -47,8 +47,9 @@ class TeamViewModel : NSObject{
                    self.isLoading = false
                    self.teamData = teams[0]
                  self.isSuccess = true
-               case .failure(let _):
+               case .failure(let error):
                  self.isSuccess = false
+                print("\(error)")
                   /* print(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
                    print(error.code)*/
                }

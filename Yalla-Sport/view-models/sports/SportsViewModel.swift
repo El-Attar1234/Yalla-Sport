@@ -17,6 +17,7 @@ class SportsViewModel :NSObject{
     var isOnline : Bool!{
           didSet{
               self.checkIfUserisOnline(isOnline)
+            self.checKConnection(isOnline)
           }
       }
     
@@ -35,6 +36,7 @@ class SportsViewModel :NSObject{
     
     var checkIfDataIsLoading : (Bool)->() = { _ in }
     var checkIfUserisOnline : (Bool)->() = { _ in }
+     var checKConnection : (Bool)->() = { _ in }
      var checkIfResponseIsSuccess : (Bool)->() = { _ in }
     
     
@@ -61,7 +63,7 @@ class SportsViewModel :NSObject{
                  self.sports=sports
                   self.isSuccess = true
   
-             case .failure(let error):
+             case .failure(let _):
                 self.isSuccess = false
                 /* print(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
                  print(error.code)*/

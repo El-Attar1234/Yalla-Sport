@@ -27,7 +27,7 @@ class UpcomingCVC: UICollectionViewCell {
      private func downloadTeamDetailsByName(teamName :String ,image :UIImageView){
               let remoteDatasource = RemoteDataSource()
               //   self.view.showIndicator()
-              remoteDatasource.getTeamDetailsByName(teamName :teamName){[weak self] (result) in
+              remoteDatasource.getTeamDetailsByName(teamName :teamName){(result) in
                  // guard let self = self else{return}
                   //     self.view.hideIndicator()
                   switch result {
